@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contato - Guia de Curitiba</title>
+  <meta name="description" content="Entre em contato, envie sugestões ou solicite ajuda para montar um roteiro em Curitiba." />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Menu principal">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌲</span>
+        <span>
+          <strong>Curitiba</strong>
+          <small>Guia da cidade</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="pontos-turisticos.html">Pontos turísticos</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a class="active" href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Fale conosco</p>
+        <h1>Contato e sugestões</h1>
+        <p>
+          Envie sugestões de conteúdo, dúvidas sobre a cidade ou ideias para melhorar este guia.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container two-columns">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-field">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Exemplo: Ana Silva" required />
+          <small class="error-message" id="nomeError"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@email.com" required />
+          <small class="error-message" id="emailError"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione uma opção</option>
+            <option value="Roteiro">Ajuda com roteiro</option>
+            <option value="Sugestão">Sugestão de conteúdo</option>
+            <option value="Correção">Correção de informação</option>
+            <option value="Outro">Outro assunto</option>
+          </select>
+          <small class="error-message" id="assuntoError"></small>
+        </div>
+
+        <div class="form-field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+          <small class="error-message" id="mensagemError"></small>
+        </div>
+
+        <button class="btn primary" type="submit">Enviar mensagem</button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <aside class="info-box">
+        <h2>Informações úteis</h2>
+        <p>
+          Este site é um projeto web informativo. O formulário simula o envio da mensagem usando JavaScript,
+          ideal para apresentação acadêmica ou portfólio.
+        </p>
+
+        <ul class="check-list">
+          <li>Layout responsivo</li>
+          <li>Validação de formulário</li>
+          <li>Sem dependência de Bootstrap ou jQuery</li>
+          <li>Código mais fácil de manter</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Curitiba - Guia da Cidade</strong>
+        <p>Projeto HTML, CSS e JavaScript atualizado.</p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="pontos-turisticos.html">Turismo</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

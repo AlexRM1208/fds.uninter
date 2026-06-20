@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pontos Turísticos de Curitiba</title>
+  <meta name="description" content="Veja os principais pontos turísticos de Curitiba, incluindo parques, museus, centro histórico e atrações culturais." />
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Menu principal">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌲</span>
+        <span>
+          <strong>Curitiba</strong>
+          <small>Guia da cidade</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span aria-hidden="true">☰</span>
+        <span>Menu</span>
+      </button>
+
+      <ul class="menu" id="menu-principal">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a class="active" href="pontos-turisticos.html">Pontos turísticos</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Turismo</p>
+        <h1>Pontos turísticos para conhecer em Curitiba</h1>
+        <p>
+          Selecione um tipo de atração ou explore todos os lugares sugeridos para montar seu roteiro pela cidade.
+        </p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="filters" aria-label="Filtros de atrações">
+        <button class="filter-chip active" type="button" data-filter="todos">Todos</button>
+        <button class="filter-chip" type="button" data-filter="parques">Parques</button>
+        <button class="filter-chip" type="button" data-filter="cultura">Cultura</button>
+        <button class="filter-chip" type="button" data-filter="historico">Histórico</button>
+      </div>
+
+      <div class="cards-grid attractions-grid">
+        <article class="card attraction-card" data-category="parques">
+          <img src="img/foto1.jpg" alt="Jardim Botânico de Curitiba" />
+          <div>
+            <span class="tag">Parques</span>
+            <h2>Jardim Botânico</h2>
+            <p>
+              Um dos cartões-postais mais conhecidos da cidade, com estufa, jardins geométricos e áreas para caminhada.
+            </p>
+          </div>
+        </article>
+
+        <article class="card attraction-card" data-category="cultura">
+          <img src="img/foto2.jpg" alt="Museu e arquitetura em Curitiba" />
+          <div>
+            <span class="tag">Cultura</span>
+            <h2>Museu Oscar Niemeyer</h2>
+            <p>
+              Conhecido por sua arquitetura marcante, o museu recebe exposições de arte, design, fotografia e cultura visual.
+            </p>
+          </div>
+        </article>
+
+        <article class="card attraction-card" data-category="parques">
+          <img src="img/foto3.jpg" alt="Área verde em Curitiba" />
+          <div>
+            <span class="tag">Parques</span>
+            <h2>Parque Tanguá</h2>
+            <p>
+              Ideal para ver o pôr do sol, caminhar, fotografar e aproveitar uma das paisagens mais bonitas da cidade.
+            </p>
+          </div>
+        </article>
+
+        <article class="card attraction-card" data-category="cultura">
+          <img src="img/sobreNos.jpg" alt="Ópera de Arame em Curitiba" />
+          <div>
+            <span class="tag">Cultura</span>
+            <h2>Ópera de Arame</h2>
+            <p>
+              Teatro com estrutura metálica e vidro, cercado por área verde, lago e programação cultural.
+            </p>
+          </div>
+        </article>
+
+        <article class="card attraction-card" data-category="historico">
+          <img src="img/foto2.jpg" alt="Centro histórico de Curitiba" />
+          <div>
+            <span class="tag">Histórico</span>
+            <h2>Largo da Ordem</h2>
+            <p>
+              Região histórica com construções antigas, feiras, igrejas, bares, cafés e vida cultural.
+            </p>
+          </div>
+        </article>
+
+        <article class="card attraction-card" data-category="parques">
+          <img src="img/foto3.jpg" alt="Parque Barigui em Curitiba" />
+          <div>
+            <span class="tag">Parques</span>
+            <h2>Parque Barigui</h2>
+            <p>
+              Um dos parques mais frequentados da cidade, ótimo para caminhadas, piqueniques e lazer ao ar livre.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Curitiba - Guia da Cidade</strong>
+        <p>Explore atrações culturais, históricas e naturais.</p>
+      </div>
+
+      <nav aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="gastronomia.html">Gastronomia</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
